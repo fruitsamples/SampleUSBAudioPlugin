@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32D94FC80562CBF700B6AF17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		32D94FCA0562CBF700B6AF17 /* SampleUSBAudioPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A224C3FFF42367911CA2CB7 /* SampleUSBAudioPlugin.cpp */; settings = {ATTRIBUTES = (); }; };
+		BFDF82D9103B694F00B0FB10 /* ProcessFloatSamples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFDF82CB103B690E00B0FB10 /* ProcessFloatSamples.cpp */; };
+		BFDF82DD103B698500B0FB10 /* libProcessFloatSamples.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDF82D6103B693000B0FB10 /* libProcessFloatSamples.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFDF82DB103B697200B0FB10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFDF82D5103B693000B0FB10;
+			remoteInfo = libProcessFloatSamples;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A224C3EFF42367911CA2CB7 /* SampleUSBAudioPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleUSBAudioPlugin.h; sourceTree = "<group>"; };
+		1A224C3FFF42367911CA2CB7 /* SampleUSBAudioPlugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleUSBAudioPlugin.cpp; sourceTree = "<group>"; };
+		32D94FCF0562CBF700B6AF17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D94FD00562CBF700B6AF17 /* SampleUSBAudioPlugin.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleUSBAudioPlugin.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA8362C06AD9B9200E5AC22 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
+		BFDF82CA103B690E00B0FB10 /* AppleUSBAudioPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleUSBAudioPlugin.h; sourceTree = "<group>"; };
+		BFDF82CB103B690E00B0FB10 /* ProcessFloatSamples.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProcessFloatSamples.cpp; sourceTree = "<group>"; };
+		BFDF82CC103B690E00B0FB10 /* ProcessFloatSamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessFloatSamples.h; sourceTree = "<group>"; };
+		BFDF82D6103B693000B0FB10 /* libProcessFloatSamples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libProcessFloatSamples.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32D94FCB0562CBF700B6AF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDF82DD103B698500B0FB10 /* libProcessFloatSamples.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDF82D4103B693000B0FB10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* SampleUSBAudioPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				247142CAFF3F8F9811CA285C /* Source */,
+				8DA8362C06AD9B9200E5AC22 /* Kernel.framework */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = SampleUSBAudioPlugin;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32D94FCF0562CBF700B6AF17 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32D94FD00562CBF700B6AF17 /* SampleUSBAudioPlugin.kext */,
+				BFDF82D6103B693000B0FB10 /* libProcessFloatSamples.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		247142CAFF3F8F9811CA285C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BFDF82CA103B690E00B0FB10 /* AppleUSBAudioPlugin.h */,
+				BFDF82CB103B690E00B0FB10 /* ProcessFloatSamples.cpp */,
+				BFDF82CC103B690E00B0FB10 /* ProcessFloatSamples.h */,
+				1A224C3EFF42367911CA2CB7 /* SampleUSBAudioPlugin.h */,
+				1A224C3FFF42367911CA2CB7 /* SampleUSBAudioPlugin.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		32D94FC50562CBF700B6AF17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDF82D2103B693000B0FB10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		32D94FC30562CBF700B6AF17 /* SampleUSBAudioPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91D908733DB10010E9CD /* Build configuration list for PBXNativeTarget "SampleUSBAudioPlugin" */;
+			buildPhases = (
+				32D94FC50562CBF700B6AF17 /* Headers */,
+				32D94FC70562CBF700B6AF17 /* Resources */,
+				32D94FC90562CBF700B6AF17 /* Sources */,
+				32D94FCB0562CBF700B6AF17 /* Frameworks */,
+				32D94FCC0562CBF700B6AF17 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFDF82DC103B697200B0FB10 /* PBXTargetDependency */,
+			);
+			name = SampleUSBAudioPlugin;
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+			productName = SampleUSBAudioPlugin;
+			productReference = 32D94FD00562CBF700B6AF17 /* SampleUSBAudioPlugin.kext */;
+			productType = "com.apple.product-type.kernel-extension.iokit";
+		};
+		BFDF82D5103B693000B0FB10 /* libProcessFloatSamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFDF82DE103B69A300B0FB10 /* Build configuration list for PBXNativeTarget "libProcessFloatSamples" */;
+			buildPhases = (
+				BFDF82D2103B693000B0FB10 /* Headers */,
+				BFDF82D3103B693000B0FB10 /* Sources */,
+				BFDF82D4103B693000B0FB10 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libProcessFloatSamples;
+			productName = libProcessFloatSamples;
+			productReference = BFDF82D6103B693000B0FB10 /* libProcessFloatSamples.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91DD08733DB10010E9CD /* Build configuration list for PBXProject "SampleUSBAudioPlugin" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* SampleUSBAudioPlugin */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32D94FC30562CBF700B6AF17 /* SampleUSBAudioPlugin */,
+				BFDF82D5103B693000B0FB10 /* libProcessFloatSamples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32D94FC70562CBF700B6AF17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D94FC80562CBF700B6AF17 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		32D94FCC0562CBF700B6AF17 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32D94FC90562CBF700B6AF17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D94FCA0562CBF700B6AF17 /* SampleUSBAudioPlugin.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDF82D3103B693000B0FB10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDF82D9103B694F00B0FB10 /* ProcessFloatSamples.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFDF82DC103B697200B0FB10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFDF82D5103B693000B0FB10 /* libProcessFloatSamples */;
+			targetProxy = BFDF82DB103B697200B0FB10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91DA08733DB10010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.MySoftwareCompany.driver.SampleUSBAudioPlugin;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = SampleUSBAudioPlugin;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		1DEB91DB08733DB10010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.MySoftwareCompany.driver.SampleUSBAudioPlugin;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = SampleUSBAudioPlugin;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		1DEB91DE08733DB10010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=macosx10.6]" = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB91DF08733DB10010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=macosx10.6]" = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		BFDF82D7103B693000B0FB10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					KERNEL,
+					APPLE,
+					NeXT,
+				);
+				HEADER_SEARCH_PATHS = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers";
+				OTHER_CFLAGS = (
+					"-fno-schedule-insns",
+					"-nostdinc",
+					"-finline",
+					"-fno-keep-inline-functions",
+					"-force_cpusubtype_ALL",
+					"-mlong-branch",
+					"-static",
+					"-fno-schedule-insns2",
+					"-funroll-all-loops",
+					"-Wall",
+					"$(OTHER_CFLAGS_$(arch))",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ProcessFloatSamples;
+			};
+			name = Debug;
+		};
+		BFDF82D8103B693000B0FB10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					KERNEL,
+					APPLE,
+					NeXT,
+				);
+				HEADER_SEARCH_PATHS = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers";
+				OTHER_CFLAGS = (
+					"-fno-schedule-insns",
+					"-nostdinc",
+					"-finline",
+					"-fno-keep-inline-functions",
+					"-force_cpusubtype_ALL",
+					"-mlong-branch",
+					"-static",
+					"-fno-schedule-insns2",
+					"-funroll-all-loops",
+					"-Wall",
+					"$(OTHER_CFLAGS_$(arch))",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ProcessFloatSamples;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91D908733DB10010E9CD /* Build configuration list for PBXNativeTarget "SampleUSBAudioPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91DA08733DB10010E9CD /* Debug */,
+				1DEB91DB08733DB10010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91DD08733DB10010E9CD /* Build configuration list for PBXProject "SampleUSBAudioPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91DE08733DB10010E9CD /* Debug */,
+				1DEB91DF08733DB10010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFDF82DE103B69A300B0FB10 /* Build configuration list for PBXNativeTarget "libProcessFloatSamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFDF82D7103B693000B0FB10 /* Debug */,
+				BFDF82D8103B693000B0FB10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
